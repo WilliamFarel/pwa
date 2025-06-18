@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA Todo App</title>
+    <meta name="theme-color" content="#4caf50">
+    <meta name="description" content="A progressive web app todo list">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icons/android-icon-72x72.png" type="image/png">
+    <link rel="apple-touch-icon" href="icons/apple-icon-152x152.png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Todo App</h1>
+            <div class="install-btn-container">
+                <button id="installBtn" class="install-btn">Install App</button>
+            </div>
+        </header>
+        
+        <div class="input-container">
+            <input type="text" id="todoInput" placeholder="Add a new task...">
+            <button id="addBtn">Add</button>
+        </div>
+        
+        <div class="filter-container">
+            <button id="allBtn" class="filter-btn active">All</button>
+            <button id="activeBtn" class="filter-btn">Active</button>
+            <button id="completedBtn" class="filter-btn">Completed</button>
+        </div>
+        
+        <ul id="todoList"></ul>
+        
+        <div class="stats">
+            <span id="itemsLeft">0 items left</span>
+            <button id="clearCompleted">Clear Completed</button>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
